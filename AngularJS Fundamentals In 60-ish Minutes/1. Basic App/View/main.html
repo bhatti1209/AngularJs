@@ -1,0 +1,17 @@
+<html data-ng-app="">
+	<head>
+		<title>Angular JS Fundamentals in 60-ish Minutes</title>
+		<script type="text/javascript" src="./../Scripts/angular.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			Name: <input type="text" data-ng-model="name"> {{name}}
+		</div>
+		<br/>
+		<div class="container" data-ng-init="names=['superman','batman','cartman']">
+			<ul>
+			    <li data-ng-repeat="foo in names">{{foo}}</li>
+			</ul>
+		</div>
+	</body>
+</html>

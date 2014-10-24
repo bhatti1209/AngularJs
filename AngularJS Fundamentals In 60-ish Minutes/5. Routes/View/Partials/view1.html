@@ -1,0 +1,22 @@
+<h2>View 1</h2>
+<div class="outerContainer" data-ng-controller="SimpleController">
+	<div class="container">
+		Name: <input type="text" data-ng-model="filters.name"> {{name}}
+	</div>
+	<br/>
+	<div class="container" >
+		<ul>
+			<li data-ng-repeat="cust in customers | filter: filters.name">{{cust.name}} - {{cust.city}}</li>
+		</ul>
+	</div>
+	<br/>
+	<div class="newCustomer">
+		Customer Name: <input type="text" data-ng-model="newCustomer.name">
+		<br/>
+		Customer City:&nbsp;&nbsp;&nbsp;<input type="text" data-ng-model="newCustomer.city">
+		<br/>
+		<button data-ng-click="addCustomer()">Add Customer</button>
+	</div>
+	<br/>
+	<a href="#/View2">View 2</a>
+</div>
